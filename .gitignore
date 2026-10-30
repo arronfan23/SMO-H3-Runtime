@@ -1,0 +1,18 @@
+# Generated runtime archives and chunks
+runtime-packs/
+*.zip
+*.part[0-9]*
+
+# Model binaries must remain with their publishers
+*.safetensors
+*.ckpt
+*.onnx
+*.pt
+*.pth
+
+# Downloads and temporary files
+*.download
+*.partial
+*.tmp
+*.temp
+~$*
