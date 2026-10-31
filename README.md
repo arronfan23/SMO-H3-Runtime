@@ -2,7 +2,25 @@
 
 SMO.H3 Studio 的 SelfLift Spark 运行包分块、环境清单与可复现打包脚本。
 
+<p>
+  <a href="https://github.com/arronfan23/SMO-H3-Runtime/releases/tag/runtime-v1"><img alt="运行环境 runtime-v1" src="https://img.shields.io/badge/runtime-v1-2f7ea6" /></a>
+  <a href="./LICENSE"><img alt="许可证 MIT" src="https://img.shields.io/badge/license-MIT-green" /></a>
+  <img alt="平台 Windows" src="https://img.shields.io/badge/platform-Windows-blue" />
+</p>
+
 本仓库不是 MiniMax 官方整合包，也不代表 ComfyUI、SelfLift 或模型发布方提供官方支持。运行包中的上游组件保留原有许可证；本仓库的 MIT 许可证仅适用于 SMO 脚本与文档。
+
+## 下载
+
+SMO.H3 Studio 首次启动时会按硬件自动下载对应分块；一般用户无需手动下载。手动下载请使用 [runtime-v1 Release](https://github.com/arronfan23/SMO-H3-Runtime/releases/tag/runtime-v1)：
+
+| 文件 | 说明 | 大小 |
+| --- | --- | --- |
+| [selflift-spark.json](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/selflift-spark.json) | 环境与模型清单（SHA256、大小、来源） | 7.2 KB |
+| [SM89 part1](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/ComfyUI_SelfLift_Spark_SM89_CUDA130_NoModels.zip.part1) · [part2](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/ComfyUI_SelfLift_Spark_SM89_CUDA130_NoModels.zip.part2) · [part3](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/ComfyUI_SelfLift_Spark_SM89_CUDA130_NoModels.zip.part3) | RTX 30 / 40 系运行包（分块） | 4.55 GB |
+| [SM120 part1](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/ComfyUI_SelfLift_Spark_SM120_CUDA130_NoModels.zip.part1) · [part2](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/ComfyUI_SelfLift_Spark_SM120_CUDA130_NoModels.zip.part2) · [part3](https://github.com/arronfan23/SMO-H3-Runtime/releases/download/runtime-v1/ComfyUI_SelfLift_Spark_SM120_CUDA130_NoModels.zip.part3) | RTX 50 系运行包（分块） | 4.55 GB |
+
+同一运行包的三个分块需全部下载后按顺序合并，并按清单核对整包 SHA256 后使用。配套桌面应用见 [SMO-H3-Studio](https://github.com/arronfan23/SMO-H3-Studio)。
 
 ## 硬件与运行包
 
