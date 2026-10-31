@@ -1,5 +1,7 @@
 # SMO-H3-Runtime
 
+> **本仓库已迁移。** 运行包、环境清单与第三方声明均已合并到主仓库 [SMO-H3-Studio](https://github.com/arronfan23/SMO-H3-Studio)。新下载请使用主仓库的 [runtime-v1 Release](https://github.com/arronfan23/SMO-H3-Studio/releases/tag/runtime-v1)。本仓库保留仅用于兼容已分发的旧版本链接，后续不再更新。
+
 SMO.H3 Studio 的 SelfLift Spark 运行包分块、环境清单与可复现打包脚本。
 
 <p>
